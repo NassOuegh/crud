@@ -1,0 +1,21 @@
+<form #addform="ngForm" (ngSubmit)="submit(addform)">
+  <div class="form-group">
+    <label for="num">Id</label>
+    <input type="number" class="form-control" id="num" ngModel [(ngModel)]="equipe.id" name="id"/>
+  </div>
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" class="form-control" id="name" ngModel [(ngModel)]="equipe.name" name="name"/>
+  </div>
+  <div class="form-check">
+    <label for="country">Country</label>
+    <input
+      type="text"
+      class="form-control"
+      id="country"
+      ngModel [(ngModel)]="equipe.country"
+      name="country"
+    />
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
